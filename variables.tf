@@ -31,9 +31,9 @@ variable "fw_login_password" {
   default     = "Aviatrix123#"
 }
 
-variable "fw_management_ip" {
+variable "fw_instance_public_ip" {
   type        = string
-  description = "Firewall management IP address"
+  description = "Firewall public management IP address"
   default = null
 }
 
