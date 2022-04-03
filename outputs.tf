@@ -1,3 +1,5 @@
+# Aviatrix FireNet Vendor Integration Data Source Output
 output "firenet_vendor_integration" {
-  value = data.aviatrix_firenet_vendor_integration.this
+  description = "Data output of FireNet Vendor Integration"
+  value = try(data.aviatrix_firenet_vendor_integration.this)
 }
