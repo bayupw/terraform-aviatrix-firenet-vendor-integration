@@ -9,7 +9,3 @@ data "aviatrix_firenet_vendor_integration" "this" {
   password      = var.fw_login_password
   save          = true
 }
-
-output "fw_vendor_integration" {
-  value = data.aviatrix_firenet_vendor_integration.this
-}
