@@ -6,7 +6,8 @@ Terraform module for Aviatrix which configures FireNet Vendor Integration
 
 ```hcl
 module "vendor_integration" {
-  source                  = "github.com/bayupw/terraform-aviatrix-firenet-vendor-integration"
+  source  = "bayupw/firenet-vendor-integration/aviatrix"
+  version = "1.6.1"
 
   transit_firenet_vpc_id  = aviatrix_firewall_instance.fw_instance.vpc_id
   fw_instance_id          = aviatrix_firewall_instance.fw_instance.instance_id
@@ -27,7 +28,8 @@ resource "time_sleep" "wait_fw_instance" {
 }
 
 module "vendor_integration" {
-  source                  = "github.com/bayupw/terraform-aviatrix-firenet-vendor-integration"
+  source  = "bayupw/firenet-vendor-integration/aviatrix"
+  version = "1.6.1"
 
   transit_firenet_vpc_id  = aviatrix_firewall_instance.fw_instance.vpc_id
   fw_instance_id          = aviatrix_firewall_instance.fw_instance.instance_id
